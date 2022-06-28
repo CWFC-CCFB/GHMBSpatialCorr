@@ -1,4 +1,5 @@
 Author Mathieu Fortin - Canadian Forest Service
+
 Copyright (C) 2022 Her Majesty the Queen in right of Canada
 
 Email: mathieu.fortin.re@gmail.com
@@ -19,3 +20,11 @@ Please see the license LGPL-3.0 at http://www.gnu.org/copyleft/lesser.html.
 Documentation: https://github.com/CWFC-CCFB/GHMBSpatialCorr/wiki
 
 Bug reporting: https://github.com/CWFC-CCFB/GHMBSpatialCorr/issues
+
+Copy these two lines in your R console to install the package:
+
+~~~R
+library(remotes)
+install_github("CWFC-CCFB/GHMBSpatialCorr")
+~~~
+
