@@ -9,7 +9,7 @@ Copyright: Her Majesty the Queen in right of Canada
 Description: Provide functions to calculate the spatial correlations
    across a population in the context of Generalized Hierarchical
    Model-Based (GHMB) inference
-URL: https://github.com/CWFC-CCFB/GHMB_SpatialCorr/wiki
+URL: https://github.com/CWFC-CCFB/GHMBSpatialCorr/wiki
 Depends: R (>= 3.5.0)
 Imports: 
     J4R (>= 1.1.7)
