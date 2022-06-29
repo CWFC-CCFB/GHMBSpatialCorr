@@ -6,6 +6,47 @@
 
 jarFilename <- "spatialcorrcalc-0.1.jar"
 
+
+#'
+#' A data.frame object to provide an example
+#'
+#' @docType data
+#'
+#' @usage data(popExample)
+#'
+#' @keywords datasets
+#'
+#' @examples
+#' data(popExample)
+"popExample"
+
+#'
+#' A vector of containing the IDs of the population units in sample s1
+#'
+#' @docType data
+#'
+#' @usage data(FIDs1)
+#'
+#' @keywords datasets
+#'
+#' @examples
+#' data(FIDs1)
+"FIDs1"
+
+#'
+#' A vector of containing the IDs of the population units in sample s2
+#'
+#' @docType data
+#'
+#' @usage data(FIDs2)
+#'
+#' @keywords datasets
+#'
+#' @examples
+#' data(FIDs2)
+"FIDs2"
+
+
 .welcomeMessage <- function() {
   packageStartupMessage("Welcome to GHMBSpatialCorr!")
   packageStartupMessage("The GHMBSpatialCorr package makes it possible to sum the spatial correlations")
@@ -178,22 +219,6 @@ getCorrelationSumsForTheseUnits <- function(calculator, parm, sample = c(1,2), s
   }
 }
 
-
-#'
-#' Shut down the Java server
-#'
-#' This method overrides the original function of the J4R package. It only adds
-#' a call to the clearCache function before calling the original function of
-#' the J4R package.
-#'
-#' @examples
-#' \dontrun{
-#' shutdownJava()}
-#'
-#' @export
-shutdownJava <- function() {
-  J4R::shutdownJava()
-}
 
 
 #'
