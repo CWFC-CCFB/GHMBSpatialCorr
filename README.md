@@ -21,7 +21,7 @@ Documentation: https://github.com/CWFC-CCFB/GHMBSpatialCorr/wiki
 
 Bug reporting: https://github.com/CWFC-CCFB/GHMBSpatialCorr/issues
 
-Copy these two lines in your R console to install the package:
+Copy these three lines in your R console to install the package:
 
 ~~~R
 install.packages("https://sourceforge.net/projects/repiceasource/files/latest/download", repos = NULL,  type="source") ### To install J4R (dependency)
@@ -29,3 +29,4 @@ library(remotes)
 install_github("CWFC-CCFB/GHMBSpatialCorr") ### install GHMBSpatialCorr directly from GitHub
 ~~~
 
+An example of code is shown at: https://github.com/CWFC-CCFB/GHMBSpatialCorr/wiki#how-it-works
