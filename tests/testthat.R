@@ -1,4 +1,4 @@
 library(testthat)
-library(BioSIM)
+library(GHMBSpatialCorr)
 
-test_check("BioSIM")
+test_check("GHMBSpatialCorr")

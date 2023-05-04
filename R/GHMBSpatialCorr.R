@@ -4,7 +4,7 @@
 #' @author Mathieu Fortin - June 2022
 
 
-jarFilename <- "spatialcorrcalc-0.1.jar"
+jarFilename <- "SpatialCorrCalc-v1.0.0.jar"
 
 
 #'
@@ -201,7 +201,7 @@ getCorrelationSumsForTheseUnits <- function(calculator, parm, sample = c(1,2), s
 
 
 .checkSubpopulationArgument <- function(subpopulation) {
-  if (class(subpopulation) == "numeric" || class(subpopulation) == "integer") {
+  if (methods::is(subpopulation, "numeric") || methods::is(subpopulation, "integer")) {
     myListFIDs <- J4R::createJavaObject("java.util.ArrayList")
     myListFIDs$add(as.integer(subpopulation))
     return(myListFIDs)
@@ -211,7 +211,7 @@ getCorrelationSumsForTheseUnits <- function(calculator, parm, sample = c(1,2), s
 }
 
 .checkJavaObject <- function(javaObj, class) {
-  if (class(javaObj) != "java.object") {
+  if (!methods::is(javaObj, "java.object")) {
     stop(paste("The calculator argument must be a java.object instance of the", class, "class!"))
   }
   if (javaObj$.class != class) {
