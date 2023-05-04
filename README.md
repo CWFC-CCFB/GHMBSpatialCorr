@@ -1,3 +1,10 @@
+The GHMBSpatialCorr package
+===============
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/CWFC-CCFB/GHMBSpatialCorr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/CWFC-CCFB/GHMBSpatialCorr/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 Author Mathieu Fortin - Canadian Forest Service
 
 Copyright (C) 2022 Her Majesty the Queen in right of Canada

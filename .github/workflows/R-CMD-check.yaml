@@ -41,7 +41,7 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::rcmdcheck
+          extra-packages: CWFC-CCFB/J4R, any::rcmdcheck
           needs: check
 
       - uses: r-lib/actions/check-r-package@v2
